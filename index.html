@@ -13,8 +13,11 @@
     />
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -22,14 +25,19 @@
     <!-- Start Navbar -->
     <nav
       class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top"
-      style="background-color: #5246ff"
+      style="background-color: #898ac4"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">    <a class="navbar-brand" href="#">
-            <img src="img/arch.png" alt="Logo" width="30" height="24" class="cuy d-inline-block">
-            Welcome
-          </a>
-      </a>
+        <a class="navbar-brand" href="#">
+          <!-- <img
+              src="img/arch.png"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="cuy d-inline-block"
+            /> -->
+          Welcome
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -44,7 +52,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -63,27 +73,32 @@
 
     <!-- Start Jumbotron -->
     <section class="jumbotron text-center">
-      <img
+      <!-- <img
         src="img/haewon.jpg"
         alt="myGf"
         width="200"
         class="rounded-circle img-thumbnail"
-      />
-      <h1 class="display-4">Farrel E.A</h1>
+      /> -->
+      <h1 class="typing">Welcome to my Portfolio</h1>
+      <h1 class="display-4 mt-5" style="color: white; font-weight: bold;">
+        Farrel Endra A.
+      </h1>
       <p class="lead">CS Student of Harvard University</p>
+      <!-- Wave -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#ffffff"
+          fill="#C0C9EE"
           fill-opacity="1"
           d="M0,32L30,42.7C60,53,120,75,180,117.3C240,160,300,224,360,229.3C420,235,480,181,540,154.7C600,128,660,128,720,144C780,160,840,192,900,197.3C960,203,1020,181,1080,160C1140,139,1200,117,1260,90.7C1320,64,1380,32,1410,16L1440,0L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
         ></path>
       </svg>
+      <!-- End Wave -->
     </section>
     <!-- End Jumbotron -->
 
     <!-- Start About -->
-    <section id="about">
-      <div class="container">
+    <section id="about" style="background-color: #c0c9ee">
+      <!-- <div class="container">
         <div class="row text-center mb-4">
           <div class="col">
             <h2>About Me</h2>
@@ -105,15 +120,50 @@
               a illo consectetur repellat autem quibusdam.
             </p>
           </div>
+        </div> -->
+      <div class="row text-center mb-4">
+        <div class="col fs-1 fw-bold">
+          <p>About me</p>
         </div>
       </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-4 flex justify-content-center align-items-center">
+          <img
+            src="img/takopi.jpeg"
+            class="my-img img-thumbnail d-block mx-auto"
+            alt="My Image"
+          />
+        </div>
+        <div class="col-md-4">
+          <p>
+            A paragraph of placeholder text. We’re using it here to show the use
+            of the clearfix class. We’re adding quite a few meaningless phrases
+            here to demonstrate how the columns interact here with the floated
+            image.
+          </p>
+          <p>
+            As you can see the paragraphs gracefully wrap around the floated
+            image. Now imagine how this would look with some actual content in
+            here, rather than just this boring placeholder text that goes on and
+            on, but actually conveys no tangible information at. It simply takes
+            up space and should not really be read.
+          </p>
+          <p>
+            And yet, here you are, still persevering in reading this placeholder
+            text, hoping for some more insights, or some hidden easter egg of
+            content. A joke, perhaps. Unfortunately, there’s none of that here.
+          </p>
+        </div>
+      </div>
+      <!-- Wave -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#c2c8ff"
+          fill="#A2AADB"
           fill-opacity="1"
           d="M0,192L48,213.3C96,235,192,277,288,261.3C384,245,480,171,576,165.3C672,160,768,224,864,245.3C960,267,1056,245,1152,224C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
+      <!-- End Wave -->
     </section>
     <!-- End About -->
 
@@ -121,14 +171,18 @@
     <section id="gallery">
       <div class="container">
         <div class="row text-center mb-4">
-          <div class="col">
-            <h2>Gallery</h2>
+          <div class="col fs-1 fw-bold">
+            <p style="color: white;">Gallery</p>
           </div>
         </div>
         <div class="row justify-content-center text-center">
           <div class="col-md-4 mb-4 d-flex justify-content-center">
             <div class="card" style="width: 18rem">
-              <img src="img/gallery/selfie1.jpg" class="card-img-top" alt="Selfie 1" />
+              <img
+                src="img/gallery/selfie1.jpg"
+                class="card-img-top"
+                alt="Selfie 1"
+              />
               <div class="card-body">
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
@@ -139,29 +193,11 @@
           </div>
           <div class="col-md-4 mb-4 d-flex justify-content-center">
             <div class="card" style="width: 18rem">
-              <img src="img/gallery/selfie2.jpg" class="card-img-top" alt="Selfie 2" />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-         <div class="col-md-4 mb-4 d-flex justify-content-center">
-            <div class="card" style="width: 18rem">
-              <img src="img/gallery/selfie3.jpg" class="card-img-top" alt="Selfie 3" />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div> 
-          <div class="col-md-4 mb-4 d-flex justify-content-center">
-            <div class="card" style="width: 18rem">
-              <img src="img/gallery/selfie3.jpg" class="card-img-top" alt="Selfie 3" />
+              <img
+                src="img/gallery/selfie2.jpg"
+                class="card-img-top"
+                alt="Selfie 2"
+              />
               <div class="card-body">
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
@@ -172,7 +208,41 @@
           </div>
           <div class="col-md-4 mb-4 d-flex justify-content-center">
             <div class="card" style="width: 18rem">
-              <img src="img/gallery/selfie1.jpg" class="card-img-top" alt="Selfie 3" />
+              <img
+                src="img/gallery/selfie3.jpg"
+                class="card-img-top"
+                alt="Selfie 3"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 d-flex justify-content-center">
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/gallery/selfie3.jpg"
+                class="card-img-top"
+                alt="Selfie 3"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 d-flex justify-content-center">
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/gallery/selfie1.jpg"
+                class="card-img-top"
+                alt="Selfie 3"
+              />
               <div class="card-body">
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
@@ -183,45 +253,77 @@
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,128L48,122.7C96,117,192,107,288,128C384,149,480,203,576,224C672,245,768,235,864,202.7C960,171,1056,117,1152,85.3C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#C0C9EE"
+          fill-opacity="1"
+          d="M0,128L48,122.7C96,117,192,107,288,128C384,149,480,203,576,224C672,245,768,235,864,202.7C960,171,1056,117,1152,85.3C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <!-- End Gallery -->
 
     <!-- Start Contact -->
-    <section id="contact">
-        <div class="container">
-            <div class="row text-center mb-4">
-                <div class="col">
-                    <h2>Contact Me</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-7">
-                    <form>
-                        <div class="mb-3">
-                          <label for="name" class="form-label">Full Name</label>
-                          <input type="text" class="form-control" id="name" aria-describedby="name">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="email">
-                          </div>
-                          <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="3"></textarea>
-                          </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </form>
-                </div>
-            </div>
+    <section id="contact" style="background-color: #c0c9ee">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
         </div>
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5246ff" fill-opacity="1" d="M0,32L48,53.3C96,75,192,117,288,133.3C384,149,480,139,576,122.7C672,107,768,85,864,96C960,107,1056,149,1152,160C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#A2AADB"
+        fill-opacity="1"
+        d="M0,32L48,53.3C96,75,192,117,288,133.3C384,149,480,139,576,122.7C672,107,768,85,864,96C960,107,1056,149,1152,160C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
     <!-- End Contact -->
 
     <!-- Start Footer -->
-    <footer class="text-white text-center pb-5" style="background-color: #5246ff;">
-        <p>Created with <i class="bi bi-arrow-through-heart-fill text-danger"></i> by <a href="https://instagram.com/frxlnd" class="text-white fw-bold">Farrel Endra A.</a> 2024.</p>
+    <footer
+      class="text-white text-center pb-5"
+      style="background-color: #A2AADB"
+    >
+      <p>
+        Created with
+        <i class="bi bi-arrow-through-heart-fill text-danger"></i> by
+        <a href="https://instagram.com/frxlnd" class="text-white fw-bold"
+          >Farrel Endra A.</a
+        >
+        2024.
+      </p>
     </footer>
     <!-- End Footer -->
 

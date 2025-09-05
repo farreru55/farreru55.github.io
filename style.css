@@ -1,14 +1,61 @@
-.cuy {
+/* .cuy {
     margin-top: -2px;
+} */
+
+/* Typing Text */
+:root {
+  --background: #a2aadb;
+}
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background: var(--background);
+  background-color: #c0c9ee;
+}
+.typing {
+  font-family: "Inconsolata", Consolas, monospace;
+  font-size: 6vw;
+  color: black;
+  font-weight: normal;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.1em solid white;
+  max-width: 23ch; /* jumlah karakter teks */
+  animation: typing 3s steps(23, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 23ch; } /* jumlah karakter teks */
+}
+
+@keyframes blink-caret {
+  0%, 100% { border-color: white; }
+  50% { border-color: transparent; }
 }
 
 .jumbotron {
-    padding-top: 6rem;
-    background-color: #c2c8ff;
+  padding-top: 6rem;
+  background-color: #a2aadb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #gallery {
-    background-color: #c2c8ff;
+  background-color: #a2aadb;
 }
 section {
-    padding-top: 4rem;
+  padding-top: 4rem;
+}
+.display-name {
+  font-weight: bold;
+}
+.my-img {
+  border-radius: 20%;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
 }
