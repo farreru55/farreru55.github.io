@@ -1,61 +1,433 @@
-/* .cuy {
-    margin-top: -2px;
-} */
-
-/* Typing Text */
 :root {
-  --background: #a2aadb;
+  /* Catppuccin Mocha Palette */
+  --bg-base: #1e1e2e;
+  --bg-mantle: #181825;
+  --bg-surface: #313244;
+  
+  --text-main: #cdd6f4;
+  --text-sub: #a6adc8;
+  
+  --accent-primary: #cba6f7; /* Mauve */
+  --accent-secondary: #89b4fa; /* Blue */
+  --accent-highlight: #f5c2e7; /* Pink */
+  
+  --danger: #f38ba8; /* Red */
 }
+
 body {
-  display: grid;
-  place-content: center;
-  min-height: 100vh;
-  background: var(--background);
-  background-color: #c0c9ee;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-base);
+  color: var(--text-main);
+  overflow-x: hidden;
 }
-.typing {
-  font-family: "Inconsolata", Consolas, monospace;
-  font-size: 6vw;
-  color: black;
-  font-weight: normal;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Work Sans', sans-serif;
+  color: var(--accent-primary);
+}
+
+/* Navbar - Elegant Redesign */
+.navbar-custom {
+  background-color: rgba(30, 30, 46, 0.8); /* More transparent */
+  backdrop-filter: blur(15px); /* Stronger blur */
+  -webkit-backdrop-filter: blur(15px); /* Safari support */
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Fainter border */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease;
+}
+
+.navbar-custom .navbar-brand {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px; /* Wider spacing */
+  text-transform: uppercase; /* Uppercase for elegance */
+  color: var(--accent-primary) !important;
+}
+
+.navbar-custom .nav-link {
+  color: var(--text-sub) !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-left: 1.5rem;
   position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 0.1em solid white;
-  max-width: 23ch; /* jumlah karakter teks */
-  animation: typing 3s steps(23, end) forwards, blink-caret 0.75s step-end infinite;
+  transition: color 0.3s ease;
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 23ch; } /* jumlah karakter teks */
+.navbar-custom .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background-color: var(--accent-secondary);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
 }
 
-@keyframes blink-caret {
-  0%, 100% { border-color: white; }
-  50% { border-color: transparent; }
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  color: var(--accent-secondary) !important;
 }
 
+.navbar-custom .nav-link:hover::after,
+.navbar-custom .nav-link.active::after {
+  width: 100%;
+}
+
+/* Hero Section / Jumbotron */
 .jumbotron {
-  padding-top: 6rem;
-  background-color: #a2aadb;
+  /* Linear gradient using Mantle and Base */
+  background: linear-gradient(135deg, var(--bg-mantle), var(--bg-base));
+  padding-top: 8rem;
+  padding-bottom: 0;
+  position: relative;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure shapes don't spill out */
 }
-#gallery {
-  background-color: #a2aadb;
-}
-section {
-  padding-top: 4rem;
-}
-.display-name {
-  font-weight: bold;
-}
-.my-img {
-  border-radius: 20%;
-  max-width: 350px;
+
+/* Jumbotron Decorations */
+.animated-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.shape {
+  position: absolute;
+  filter: blur(50px);
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: float 20s infinite alternate;
+}
+
+.shape-1 {
+  top: -10%;
+  left: -10%;
+  width: 50vw;
+  height: 50vw;
+  background: var(--accent-primary); /* Mauve */
+  animation-delay: 0s;
+}
+
+.shape-2 {
+  bottom: 20%;
+  right: -10%;
+  width: 30vw;
+  height: 30vw;
+  background: var(--accent-secondary); /* Blue */
+  animation-delay: -5s;
+}
+
+.shape-3 {
+  bottom: -20%;
+  left: 20%;
+  width: 40vw;
+  height: 40vw;
+  background: var(--accent-highlight); /* Pink */
+  animation-delay: -10s;
+  opacity: 0.4;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(30px, 50px) rotate(20deg);
+  }
+}
+
+/* Ensure text is above decorations */
+.jumbotron .hero-title, 
+.jumbotron .hero-subtitle,
+.jumbotron img {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--accent-secondary); /* Blue */
+  margin-bottom: 3rem;
+}
+
+.wave-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+}
+
+/* Blur Transition Overlay */
+.jumbo-blur-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to top, var(--bg-base), transparent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* General Section Styles */
+.section-padding {
+  padding: 6rem 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+  color: var(--accent-primary);
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: var(--accent-secondary);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* About Section */
+#about {
+  /* Transition from Base to Mantle (Skills) */
+  background: linear-gradient(to bottom, var(--bg-base) 85%, var(--bg-mantle));
+  position: relative;
+}
+
+/* Skills Section */
+#skills {
+  /* Transition from Mantle to Base (Projects) */
+  background: linear-gradient(to bottom, var(--bg-mantle) 85%, var(--bg-base));
+}
+
+.skill-card {
+  background-color: var(--bg-surface);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-secondary);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.icon-box i {
+  color: var(--accent-secondary);
+  transition: color 0.3s ease;
+}
+
+.skill-card:hover .icon-box i {
+  color: var(--accent-primary);
+}
+
+.badge-skill {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--accent-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid var(--accent-primary);
+  transition: all 0.3s ease;
+}
+
+.badge-skill:hover {
+  background-color: var(--accent-primary);
+  color: var(--bg-base);
+  cursor: default;
+  box-shadow: 0 0 10px rgba(203, 166, 247, 0.4);
+}
+
+/* Projects Section */
+/* Override bootstrap bg-light class or just target the ID */
+#projects {
+  /* Transition from Base to Mantle (Contact) */
+  background: linear-gradient(to bottom, var(--bg-base) 85%, var(--bg-mantle)) !important;
+}
+
+.project-card {
+  background-color: var(--bg-surface);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+  border-color: var(--accent-primary);
+}
+
+.project-card .card-body {
+  padding: 1.5rem;
+}
+
+.project-card .card-text {
+  color: var(--text-sub);
+  font-size: 0.95rem;
+}
+
+/* Contact Section */
+#contact {
+  /* Transition from Mantle to Base (Footer) */
+  background: linear-gradient(to bottom, var(--bg-mantle) 85%, var(--bg-base));
+}
+
+.form-control {
+  border: 1px solid var(--bg-surface);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background-color: var(--bg-mantle);
+  color: var(--text-main);
+}
+
+.form-control:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(203, 166, 247, 0.2); /* Mauve transparent */
+  background-color: var(--bg-mantle);
+  color: var(--text-main);
+}
+
+/* Placeholder color in inputs */
+.form-control::placeholder {
+  color: var(--text-sub);
+  opacity: 0.6;
+}
+
+.btn-submit {
+  background-color: var(--accent-primary);
+  color: var(--bg-base); /* Dark text on light button */
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: var(--accent-highlight);
+  color: var(--bg-base);
+  box-shadow: 0 0 15px rgba(203, 166, 247, 0.5);
+}
+
+/* Contact Icons */
+.contact-icons a {
+  color: var(--text-main);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.contact-icons a:hover {
+  color: var(--accent-primary);
+  transform: translateY(-5px);
+}
+
+.contact-icons i {
+  font-size: 2.5rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--bg-base);
+  color: var(--text-sub);
+  border-top: 1px solid var(--bg-surface);
+}
+
+.footer a:hover {
+  color: var(--accent-primary) !important;
+  text-decoration: underline;
+}
+
+/* Bootstrap Overrides for Text Colors in this theme */
+.lead {
+  color: var(--text-sub);
+}
+
+.text-muted {
+  color: var(--text-sub) !important;
+}
+
+/* Bootstrap Modal Overrides for Catppuccin */
+.modal-content {
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--bg-mantle);
+}
+
+.modal-footer {
+  border-top: 1px solid var(--bg-mantle);
+}
+
+.btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%); /* Make close button white */
+}
+
+/* Make card clickable pointer */
+.project-card[data-bs-toggle="modal"] {
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .section-padding {
+    padding: 4rem 0;
+  }
+
+  .my-img {
+    max-width: 250px; /* Smaller image on mobile */
+    margin-bottom: 2rem;
+  }
+}
+
+.card-title {
+  color: white;
 }

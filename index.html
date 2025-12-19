@@ -1,141 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
 
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body id="home">
-    <!-- Start Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top"
-      style="background-color: #898ac4"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <!-- <img
-              src="img/arch.png"
-              alt="Logo"
-              width="30"
-              height="24"
-              class="cuy d-inline-block"
-            /> -->
-          Welcome
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="home">
+  <!-- Start Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        farreru
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- End Navbar -->
+    </div>
+  </nav>
+  <!-- End Navbar -->
 
-    <!-- Start Jumbotron -->
-    <section class="jumbotron text-center">
-      <!-- <img
-        src="img/haewon.jpg"
-        alt="myGf"
-        width="200"
-        class="rounded-circle img-thumbnail"
-      /> -->
-      <h1 class="typing">Welcome to my Portfolio</h1>
-      <h1 class="display-4 mt-5" style="color: white; font-weight: bold;">
-        Farrel Endra A.
-      </h1>
-      <p class="lead">CS Student of Harvard University</p>
-      <!-- Wave -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#C0C9EE"
-          fill-opacity="1"
-          d="M0,32L30,42.7C60,53,120,75,180,117.3C240,160,300,224,360,229.3C420,235,480,181,540,154.7C600,128,660,128,720,144C780,160,840,192,900,197.3C960,203,1020,181,1080,160C1140,139,1200,117,1260,90.7C1320,64,1380,32,1410,16L1440,0L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
-      <!-- End Wave -->
-    </section>
-    <!-- End Jumbotron -->
+  <!-- Start Jumbotron -->
+  <section class="jumbotron text-center pt-5">
+    <!-- Background Decoration -->
+    <div class="animated-bg">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
 
-    <!-- Start About -->
-    <section id="about" style="background-color: #c0c9ee">
-      <!-- <div class="container">
-        <div class="row text-center mb-4">
-          <div class="col">
-            <h2>About Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-around fs-5 text-center">
-          <div class="col-md-5">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
-              atque quos sapiente consectetur harum, minima quisquam omnis sint
-              adipisci temporibus itaque. Quasi, tempora.
-            </p>
-          </div>
-          <div class="col-md-5">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-              ducimus adipisci repellendus deserunt quisquam rem at itaque,
-              debitis voluptatibus, molestiae quod. Similique placeat voluptatum
-              a illo consectetur repellat autem quibusdam.
-            </p>
-          </div>
-        </div> -->
-      <div class="row text-center mb-4">
-        <div class="col fs-1 fw-bold">
-          <p>About me</p>
+    <h1 class="display-4 fw-bold hero-title">Farrel Endra A.</h1>
+    <p class="lead hero-subtitle">Information Systems Student at Dinamika University</p>
+    </svg>
+    <!-- End Wave -->
+
+    <!-- Blur Transition Overlay -->
+    <div class="jumbo-blur-overlay"></div>
+  </section>
+  <!-- End Jumbotron -->
+
+  <!-- Start About -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h2 class="section-title">About Me</h2>
         </div>
       </div>
       <div class="row justify-content-center align-items-center">
-        <div class="col-md-4 flex justify-content-center align-items-center">
-          <img
-            src="img/takopi.jpeg"
-            class="my-img img-thumbnail d-block mx-auto"
-            alt="My Image"
-          />
+        <div class="col-md-4 mb-4 mb-md-0 text-center">
+          <img src="assets/img/takopi.jpeg" class="my-img img-fluid shadow-lg rounded" alt="My Image" />
         </div>
-        <div class="col-md-4">
-          <p>
+        <div class="col-md-7 offset-md-1 p-3">
+          <p class="lead">
             A paragraph of placeholder text. We’re using it here to show the use
             of the clearfix class. We’re adding quite a few meaningless phrases
             here to demonstrate how the columns interact here with the floated
@@ -144,193 +98,526 @@
           <p>
             As you can see the paragraphs gracefully wrap around the floated
             image. Now imagine how this would look with some actual content in
-            here, rather than just this boring placeholder text that goes on and
-            on, but actually conveys no tangible information at. It simply takes
-            up space and should not really be read.
-          </p>
-          <p>
-            And yet, here you are, still persevering in reading this placeholder
-            text, hoping for some more insights, or some hidden easter egg of
-            content. A joke, perhaps. Unfortunately, there’s none of that here.
+            here, rather than just this boring placeholder text.
           </p>
         </div>
       </div>
-      <!-- Wave -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#A2AADB"
-          fill-opacity="1"
-          d="M0,192L48,213.3C96,235,192,277,288,261.3C384,245,480,171,576,165.3C672,160,768,224,864,245.3C960,267,1056,245,1152,224C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-      <!-- End Wave -->
-    </section>
-    <!-- End About -->
+    </div>
+  </section>
+  <!-- End About -->
 
-    <!-- Start Gallery -->
-    <section id="gallery">
-      <div class="container">
-        <div class="row text-center mb-4">
-          <div class="col fs-1 fw-bold">
-            <p style="color: white;">Gallery</p>
+  <!-- Start Skills -->
+  <section id="skills" class="section-padding">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h2 class="section-title">My Skills</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center p-2">
+        <!-- Web Development -->
+        <div class="col-md-4 mb-4">
+          <div class="skill-card p-4 text-center">
+            <div class="icon-box mb-3">
+              <i class="bi bi-window-desktop fs-1"></i>
+            </div>
+            <h3 class="fs-4 fw-bold mb-4">Web Development</h3>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+              <span class="badge-skill">HTML5</span>
+              <span class="badge-skill">CSS3</span>
+              <span class="badge-skill">JavaScript</span>
+              <span class="badge-skill">Bootstrap 5</span>
+              <span class="badge-skill">Tailwind CSS</span>
+              <span class="badge-skill">Node.js</span>
+            </div>
           </div>
         </div>
-        <div class="row justify-content-center text-center">
-          <div class="col-md-4 mb-4 d-flex justify-content-center">
-            <div class="card" style="width: 18rem">
-              <img
-                src="img/gallery/selfie1.jpg"
-                class="card-img-top"
-                alt="Selfie 1"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
+
+        <!-- Mobile Development -->
+        <div class="col-md-4 mb-4">
+          <div class="skill-card p-4 text-center">
+            <div class="icon-box mb-3">
+              <i class="bi bi-phone fs-1"></i>
+            </div>
+            <h3 class="fs-4 fw-bold mb-4">Mobile Development</h3>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+              <span class="badge-skill">Flutter</span>
+              <span class="badge-skill">Dart</span>
             </div>
           </div>
-          <div class="col-md-4 mb-4 d-flex justify-content-center">
-            <div class="card" style="width: 18rem">
-              <img
-                src="img/gallery/selfie2.jpg"
-                class="card-img-top"
-                alt="Selfie 2"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="col-md-4 mb-4">
+          <div class="skill-card p-4 text-center">
+            <div class="icon-box mb-3">
+              <i class="bi bi-tools fs-1"></i>
             </div>
-          </div>
-          <div class="col-md-4 mb-4 d-flex justify-content-center">
-            <div class="card" style="width: 18rem">
-              <img
-                src="img/gallery/selfie3.jpg"
-                class="card-img-top"
-                alt="Selfie 3"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4 d-flex justify-content-center">
-            <div class="card" style="width: 18rem">
-              <img
-                src="img/gallery/selfie3.jpg"
-                class="card-img-top"
-                alt="Selfie 3"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4 d-flex justify-content-center">
-            <div class="card" style="width: 18rem">
-              <img
-                src="img/gallery/selfie1.jpg"
-                class="card-img-top"
-                alt="Selfie 3"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
+            <h3 class="fs-4 fw-bold mb-4">Tools</h3>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+              <span class="badge-skill">Git</span>
+              <span class="badge-skill">GitHub</span>
+              <span class="badge-skill">VS Code</span>
+              <span class="badge-skill">Figma</span>
+              <span class="badge-skill">Postman</span>
+              <span class="badge-skill">NPM</span>
             </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#C0C9EE"
-          fill-opacity="1"
-          d="M0,128L48,122.7C96,117,192,107,288,128C384,149,480,203,576,224C672,245,768,235,864,202.7C960,171,1056,117,1152,85.3C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- End Gallery -->
+    </div>
+  </section>
+  <!-- End Skills -->
 
-    <!-- Start Contact -->
-    <section id="contact" style="background-color: #c0c9ee">
-      <div class="container">
-        <div class="row text-center mb-4">
-          <div class="col">
-            <h2>Contact Me</h2>
+  <!-- Start Projects -->
+  <section id="projects" class="section-padding bg-light">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h2 class="section-title">My Projects</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <!-- Project 1 (Clickable) -->
+        <div class="col-md-4 mb-4">
+          <div class="card project-card h-100" data-bs-toggle="modal" data-bs-target="#project1Modal">
+            <div class="position-relative">
+              <img src="assets/img/projects/projects-1/projects-1.jpg" class="card-img-top" alt="Selfie 1" />
+              <div
+                class="position-absolute top-50 start-50 translate-middle text-white opacity-0 hover-opacity-100 transition-opacity">
+                <i class="bi bi-eye-fill fs-1"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Project 1</h5>
+              <p class="card-text">
+                Click this card to see the gallery details! This is an example of a pop-up project showcase.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-7">
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Full Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  aria-describedby="name"
-                />
+        <!-- End Project 1 -->
+
+        <!-- Project 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card project-card h-100" data-bs-toggle="modal" data-bs-target="#project2Modal">
+            <div class="position-relative">
+              <img src="assets/img/projects/projects-2/projects-2.png" class="card-img-top" alt="Selfie 1" />
+              <div
+                class="position-absolute top-50 start-50 translate-middle text-white opacity-0 hover-opacity-100 transition-opacity">
+                <i class="bi bi-eye-fill fs-1"></i>
               </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  aria-describedby="email"
-                />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Project 2</h5>
+              <p class="card-text">
+                Click this card to see the gallery details! This is an example of a pop-up project showcase.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- End Project 2 -->
+
+        <!-- Project 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card project-card h-100" data-bs-toggle="modal" data-bs-target="#project3Modal">
+            <div class="position-relative">
+              <img src="assets/img/projects/projects-3/projects-3.jpg" class="card-img-top" alt="Selfie 1" />
+              <div
+                class="position-absolute top-50 start-50 translate-middle text-white opacity-0 hover-opacity-100 transition-opacity">
+                <i class="bi bi-eye-fill fs-1"></i>
               </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Project 3</h5>
+              <p class="card-text">
+                Click this card to see the gallery details! This is an example of a pop-up project showcase.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- End Project 3 -->
+
+        <!-- Project 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card project-card h-100" data-bs-toggle="modal" data-bs-target="#project4Modal">
+            <div class="position-relative">
+              <img src="assets/img/projects/projects-4/projects-4.jpg" class="card-img-top" alt="Selfie 1" />
+              <div
+                class="position-absolute top-50 start-50 translate-middle text-white opacity-0 hover-opacity-100 transition-opacity">
+                <i class="bi bi-eye-fill fs-1"></i>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Project 4</h5>
+              <p class="card-text">
+                Click this card to see the gallery details! This is an example of a pop-up project showcase.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- End Project 4 -->
+
+        <!-- Project 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="card project-card h-100" data-bs-toggle="modal" data-bs-target="#project5Modal">
+            <div class="position-relative">
+              <img src="assets/img/projects/projects-5/projects-5.png" class="card-img-top" alt="Selfie 1" />
+              <div
+                class="position-absolute top-50 start-50 translate-middle text-white opacity-0 hover-opacity-100 transition-opacity">
+                <i class="bi bi-eye-fill fs-1"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Project 5</h5>
+              <p class="card-text">
+                Click this card to see the gallery details! This is an example of a pop-up project showcase.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- End Project 5 -->
+      </div>
+    </div>
+  </section>
+  <!-- End Gallery -->
+
+  <!-- Project 1 Modal -->
+  <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="project1ModalLabel">My First Projects</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Carousel -->
+          <div id="carouselProject1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="assets/img/projects/projects-1/projects-1.jpg" class="d-block w-100" alt="Project Image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/projects/projects-1/projects-1-1.jpg" class="d-block w-100" alt="Project Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/haewon.jpg" class="d-block w-100" alt="Project Image 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Description -->
+          <div class="mt-4">
+            <p>This is a detailed description of the project. You can explain the tech stack used, the challenges faced,
+              and the solutions implemented.</p>
+            <p class="text-muted"><small>Tech Stack: HTML, CSS, Bootstrap</small></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary btn-submit">View Live Demo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Project Modal -->
+
+  <!-- Project 2 Modal -->
+  <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="project2ModalLabel">My Second Projects</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Carousel -->
+          <div id="carouselProject2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselProject2" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselProject2" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselProject2" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="assets/img/projects/projects-2/projects-2.png" class="d-block w-100" alt="Project Image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/projects/projects-2/projects-2-1.jpg" class="d-block w-100" alt="Project Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="img/gallery/selfie3.jpg" class="d-block w-100" alt="Project Image 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Description -->
+          <div class="mt-4">
+            <p>This is a detailed description of the project. You can explain the tech stack used, the challenges faced,
+              and the solutions implemented.</p>
+            <p class="text-muted"><small>Tech Stack: HTML, CSS, Bootstrap</small></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary btn-submit">View Live Demo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Project Modal -->
+
+  <!-- Project 3 Modal -->
+  <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="project3ModalLabel">My Third Projects</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Carousel -->
+          <div id="carouselProject3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselProject3" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselProject3" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselProject3" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="assets/img/projects/projects-3/projects-3.jpg" class="d-block w-100" alt="Project Image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/projects/projects-3/projects-3.jpg" class="d-block w-100" alt="Project Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/projects/projects-3/projects-3.jpg" class="d-block w-100" alt="Project Image 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Description -->
+          <div class="mt-4">
+            <p>This is a detailed description of the project. You can explain the tech stack used, the challenges faced,
+              and the solutions implemented.</p>
+            <p class="text-muted"><small>Tech Stack: HTML, CSS, Bootstrap</small></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary btn-submit">View Live Demo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Project Modal -->
+
+  <!-- Project 4 Modal -->
+  <div class="modal fade" id="project4Modal" tabindex="-1" aria-labelledby="project4ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="project4ModalLabel">My Fourth Projects</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Carousel -->
+          <div id="carouselProject4" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselProject4" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselProject4" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselProject4" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="assets/img/projects/projects-4/projects-4.jpg" class="d-block w-100" alt="Project Image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/projects/projects-4/projects-4-1.png" class="d-block w-100" alt="Project Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/projects/projects-4/projects-4.jpg" class="d-block w-100" alt="Project Image 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject4" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject4" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Description -->
+          <div class="mt-4">
+            <p>This is a detailed description of the project. You can explain the tech stack used, the challenges faced,
+              and the solutions implemented.</p>
+            <p class="text-muted"><small>Tech Stack: HTML, CSS, Bootstrap</small></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary btn-submit">View Live Demo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Project Modal -->
+
+  <!-- Project 5 Modal -->
+  <div class="modal fade" id="project5Modal" tabindex="-1" aria-labelledby="project5ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="project5ModalLabel">My Fifth Projects</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Carousel -->
+          <div id="carouselProject5" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselProject5" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselProject5" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselProject5" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="assets/img/projects/projects-5/projects-5.png" class="d-block w-100" alt="Project Image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/projects/projects-5/projects-5-1.png" class="d-block w-100" alt="Project Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/projects/projects-5/projects-5.png" class="d-block w-100" alt="Project Image 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject5" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject5" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Description -->
+          <div class="mt-4">
+            <p>This is a detailed description of the project. You can explain the tech stack used, the challenges faced,
+              and the solutions implemented.</p>
+            <p class="text-muted"><small>Tech Stack: HTML, CSS, Bootstrap</small></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary btn-submit">View Live Demo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Project Modal -->
+
+  <!-- Start Contact -->
+  <section id="contact" class="section-padding mb-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h2 class="section-title">Contact Me</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-md-7 contact-icons">
+          <div class="d-flex justify-content-center gap-5">
+            <a href="mailto:farrelendra15@gmail.com" target="_blank" title="Gmail">
+              <i class="bi bi-envelope-at-fill"></i>
+            </a>
+            <a href="https://linkedin.com/in/farrel-endra-asrory" target="_blank" title="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://instagram.com/farreru.riyal" target="_blank" title="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
           </div>
         </div>
       </div>
-    </section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#A2AADB"
-        fill-opacity="1"
-        d="M0,32L48,53.3C96,75,192,117,288,133.3C384,149,480,139,576,122.7C672,107,768,85,864,96C960,107,1056,149,1152,160C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-      ></path>
-    </svg>
-    <!-- End Contact -->
+      <!-- <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Write your message here..."></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-submit w-100">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <!-- End Contact -->
 
-    <!-- Start Footer -->
-    <footer
-      class="text-white text-center pb-5"
-      style="background-color: #A2AADB"
-    >
-      <p>
-        Created with
-        <i class="bi bi-arrow-through-heart-fill text-danger"></i> by
-        <a href="https://instagram.com/frxlnd" class="text-white fw-bold"
-          >Farrel Endra A.</a
-        >
-        2024.
-      </p>
-    </footer>
-    <!-- End Footer -->
+  <!-- Start Footer -->
+  <footer class="text-white text-center pb-3 pt-3">
+    <p>
+      Created with
+      <i class="bi bi-heart-fill text-danger"></i> by
+      <a href="https://instagram.com/frxlnd" class="text-white fw-bold text-decoration-none">Farrel Endra A.</a>
+    </p>
+  </footer>
+  <!-- End Footer -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
