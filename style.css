@@ -218,7 +218,8 @@ h6 {
 
 /* General Section Styles */
 .section-padding {
-  padding: 6rem 0;
+  padding: 8rem 0;
+  margin-bottom: 4rem;
 }
 
 .section-title {
