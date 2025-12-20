@@ -81,29 +81,64 @@
 
   <!-- Start About -->
   <section id="about" class="section-padding">
-    <div class="container fade-in-section mb-5">
-      <div class="row text-center mb-3">
-        <div class="col">
-          <h2 class="section-title">About Me</h2>
-        </div>
-      </div>
-      <div class="row justify-content-center align-items-center mb-5">
-        <div class="col-lg-5 mb-5 mb-lg-0 text-center">
-          <div class="about-img-wrapper d-inline-block">
-            <img src="assets/img/farreru.jpg" class="about-img img-fluid shadow-lg" alt="Farrel Endra A." width="350" />
+    <div class="container fade-in-section">
+      <div class="row align-items-center">
+        <!-- Image Column -->
+        <div class="col-lg-5 mb-5 mb-lg-0 text-center position-relative">
+          <div class="about-img-container d-inline-block position-relative">
+            <div class="about-frame"></div>
+            <img src="assets/img/farreru.JPG" class="about-img img-fluid shadow-lg position-relative rounded-3"
+              alt="Farrel Endra A." width="380" />
           </div>
         </div>
-        <div class="col-lg-7">
+        
+        <!-- Content Column -->
+        <div class="col-lg-7 ps-lg-5">
           <div class="about-content">
-            <span class="about-subtitle">Who am I?</span>
-            <h3 class="fw-bold mb-3">Information Systems Student & Web Developer</h3>
-            <p class="lead mb-4">
-              Hello! I'm Farrel Endra A., a passionate student at Dinamika University with a keen interest in building functional and beautiful web applications.
+            <span class="badge-elegant mb-2">Introduction</span>
+            <h2 class="display-6 fw-bold mb-4">
+              Designing with <span class="text-gradient">Passion</span>, <br>
+              Building with <span class="text-gradient">Precision</span>.
+            </h2>
+            <p class="lead mb-4 text-secondary">
+              Hello! I'm <strong>Farrel Endra A.</strong>, a dedicated Information Systems student at Dinamika University. 
+              I bridge the gap between complex backend logic and beautiful user interfaces.
             </p>
-            <p class="mb-4 text-muted">
-              I specialize in creating user-friendly interfaces and robust backends. My journey in tech is driven by curiosity and a desire to solve real-world problems through code. When I'm not coding, I enjoy exploring new technologies and enhancing my design skills.
+            <p class="mb-5 text-muted lh-lg">
+              My journey in tech is fueled by a relentless curiosity. I don't just write code; I craft solutions that solve real-world problems. 
+              Whether it's optimizing a database query or perfecting a pixel-perfect layout, I strive for excellence in every detail.
             </p>
-            <a href="#contact" class="btn btn-submit">Let's Talk</a>
+
+            <!-- Mini Stats -->
+            <div class="row mb-5 g-4">
+              <div class="col-6 col-sm-4">
+                <div class="stat-box">
+                  <h3 class="fw-bold mb-0 text-primary-custom">2+</h3>
+                  <small class="text-uppercase text-muted fw-bold">Years Exp</small>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4">
+                <div class="stat-box">
+                  <h3 class="fw-bold mb-0 text-primary-custom">10+</h3>
+                  <small class="text-uppercase text-muted fw-bold">Projects</small>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4">
+                <div class="stat-box">
+                  <h3 class="fw-bold mb-0 text-primary-custom">24/7</h3>
+                  <small class="text-uppercase text-muted fw-bold">Dedication</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex gap-3">
+              <a href="#contact" class="btn btn-submit shadow-sm">
+                Let's Talk <i class="bi bi-arrow-right-short"></i>
+              </a>
+              <a href="#" class="btn btn-outline-custom">
+                Download CV <i class="bi bi-download ms-1"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -709,7 +744,7 @@
   <!-- End Contact -->
 
   <!-- Start Footer -->
-  <footer class="footer text-white text-center pb-3 pt-3">
+  <footer class="text-white text-center pb-3 pt-3">
     <p>
       Created with
       <i class="bi bi-heart-fill text-danger"></i> by
