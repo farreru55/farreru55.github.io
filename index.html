@@ -19,6 +19,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
+  <!-- Devicon -->
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
   <!-- My CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -77,29 +80,31 @@
   <!-- End Jumbotron -->
 
   <!-- Start About -->
-  <section id="about" class="section-padding">
+  <section id="about" class="section-padding mb-5">
     <div class="container">
       <div class="row text-center">
         <div class="col">
           <h2 class="section-title">About Me</h2>
         </div>
       </div>
-      <div class="row justify-content-center align-items-center">
-        <div class="col-md-4 mb-4 mb-md-0 text-center">
-          <img src="assets/img/takopi.jpeg" class="my-img img-fluid shadow-lg rounded" alt="My Image" />
+      <div class="row justify-content-center align-items-center mb-5">
+        <div class="col-lg-5 mb-5 mb-lg-0 text-center">
+          <div class="about-img-wrapper d-inline-block">
+            <img src="assets/img/farreru.jpg" class="about-img img-fluid shadow-lg" alt="Farrel Endra A." width="350" />
+          </div>
         </div>
-        <div class="col-md-7 offset-md-1 p-3">
-          <p class="lead">
-            A paragraph of placeholder text. We’re using it here to show the use
-            of the clearfix class. We’re adding quite a few meaningless phrases
-            here to demonstrate how the columns interact here with the floated
-            image.
-          </p>
-          <p>
-            As you can see the paragraphs gracefully wrap around the floated
-            image. Now imagine how this would look with some actual content in
-            here, rather than just this boring placeholder text.
-          </p>
+        <div class="col-lg-7">
+          <div class="about-content">
+            <span class="about-subtitle">Who am I?</span>
+            <h3 class="fw-bold mb-3">Information Systems Student & Web Developer</h3>
+            <p class="lead mb-4">
+              Hello! I'm Farrel Endra A., a passionate student at Dinamika University with a keen interest in building functional and beautiful web applications.
+            </p>
+            <p class="mb-4 text-muted">
+              I specialize in creating user-friendly interfaces and robust backends. My journey in tech is driven by curiosity and a desire to solve real-world problems through code. When I'm not coding, I enjoy exploring new technologies and enhancing my design skills.
+            </p>
+            <a href="#contact" class="btn btn-submit">Let's Talk</a>
+          </div>
         </div>
       </div>
     </div>
@@ -122,13 +127,15 @@
               <i class="bi bi-window-desktop fs-1"></i>
             </div>
             <h3 class="fs-4 fw-bold mb-4">Web Development</h3>
-            <div class="d-flex flex-wrap justify-content-center gap-2">
-              <span class="badge-skill">HTML5</span>
-              <span class="badge-skill">CSS3</span>
-              <span class="badge-skill">JavaScript</span>
-              <span class="badge-skill">Bootstrap 5</span>
-              <span class="badge-skill">Tailwind CSS</span>
-              <span class="badge-skill">Node.js</span>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <i class="devicon-html5-plain skill-icon" title="HTML5"></i>
+              <i class="devicon-css3-plain skill-icon" title="CSS3"></i>
+              <i class="devicon-javascript-plain skill-icon" title="JavaScript"></i>
+              <i class="devicon-bootstrap-plain skill-icon" title="Bootstrap 5"></i>
+              <i class="devicon-tailwindcss-original skill-icon" title="Tailwind CSS"></i>
+              <i class="devicon-nodejs-plain skill-icon" title="Node.js"></i>
+              <i class="devicon-php-plain skill-icon" title="PHP"></i>
+              <i class="devicon-laravel-plain skill-icon" title="Laravel"></i>
             </div>
           </div>
         </div>
@@ -140,9 +147,24 @@
               <i class="bi bi-phone fs-1"></i>
             </div>
             <h3 class="fs-4 fw-bold mb-4">Mobile Development</h3>
-            <div class="d-flex flex-wrap justify-content-center gap-2">
-              <span class="badge-skill">Flutter</span>
-              <span class="badge-skill">Dart</span>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <i class="devicon-flutter-plain skill-icon" title="Flutter"></i>
+              <i class="devicon-dart-plain skill-icon" title="Dart"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="col-md-4 mb-4">
+          <div class="skill-card p-4 text-center">
+            <div class="icon-box mb-3">
+              <i class="bi bi-tools fs-1"></i>
+            </div>
+            <h3 class="fs-4 fw-bold mb-4">Database</h3>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <i class="devicon-mysql-plain skill-icon" title="MySql"></i>
+              <i class="devicon-postgresql-plain skill-icon" title="Postman"></i>
+              <i class="devicon-sqlite-plain skill-icon" title="NPM"></i>
             </div>
           </div>
         </div>
@@ -154,16 +176,19 @@
               <i class="bi bi-tools fs-1"></i>
             </div>
             <h3 class="fs-4 fw-bold mb-4">Tools</h3>
-            <div class="d-flex flex-wrap justify-content-center gap-2">
-              <span class="badge-skill">Git</span>
-              <span class="badge-skill">GitHub</span>
-              <span class="badge-skill">VS Code</span>
-              <span class="badge-skill">Figma</span>
-              <span class="badge-skill">Postman</span>
-              <span class="badge-skill">NPM</span>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <i class="devicon-git-plain skill-icon" title="Git"></i>
+              <i class="devicon-github-original skill-icon" title="GitHub"></i>
+              <i class="devicon-vscode-plain skill-icon" title="VS Code"></i>
+              <i class="devicon-figma-plain skill-icon" title="Figma"></i>
+              <i class="devicon-postman-plain skill-icon" title="Postman"></i>
+              <i class="devicon-vim-plain skill-icon" title="Vim"></i>
+              <i class="devicon-linux-plain skill-icon" title="Linux"></i>
+              <i class="devicon-npm-original-wordmark skill-icon" title="NPM"></i>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
