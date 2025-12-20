@@ -80,34 +80,34 @@
   <!-- End Jumbotron -->
 
   <!-- Start About -->
-  <section id="about" class="section-padding mb-5">
+  <section id="about" class="section-padding">
     <div class="container">
       <div class="row text-center">
         <div class="col">
           <h2 class="section-title">About Me</h2>
         </div>
       </div>
-      <div class="row justify-content-center align-items-center mb-5">
-        <div class="col-lg-5 mb-5 mb-lg-0 text-center">
-          <div class="about-img-wrapper d-inline-block">
-            <img src="assets/img/farreru.jpg" class="about-img img-fluid shadow-lg" alt="Farrel Endra A." width="350" />
-          </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-4 mb-4 mb-md-0 text-center">
+          <img src="assets/img/farreru.jpg" class="my-img img-fluid shadow-lg rounded" alt="My Image" />
         </div>
-        <div class="col-lg-7">
-          <div class="about-content">
-            <span class="about-subtitle">Who am I?</span>
-            <h3 class="fw-bold mb-3">Information Systems Student & Web Developer</h3>
-            <p class="lead mb-4">
-              Hello! I'm Farrel Endra A., a passionate student at Dinamika University with a keen interest in building functional and beautiful web applications.
-            </p>
-            <p class="mb-4 text-muted">
-              I specialize in creating user-friendly interfaces and robust backends. My journey in tech is driven by curiosity and a desire to solve real-world problems through code. When I'm not coding, I enjoy exploring new technologies and enhancing my design skills.
-            </p>
-            <a href="#contact" class="btn btn-submit">Let's Talk</a>
-          </div>
+        <div class="col-md-7 offset-md-1 p-3">
+          <p class="lead">
+            A paragraph of placeholder text. We’re using it here to show the use
+            of the clearfix class. We’re adding quite a few meaningless phrases
+            here to demonstrate how the columns interact here with the floated
+            image.
+          </p>
+          <p>
+            As you can see the paragraphs gracefully wrap around the floated
+            image. Now imagine how this would look with some actual content in
+            here, rather than just this boring placeholder text.
+          </p>
         </div>
       </div>
     </div>
+    <!-- Section Blur Overlay -->
+    <div class="section-blur-overlay"></div>
   </section>
   <!-- End About -->
 
@@ -202,7 +202,7 @@
           <h2 class="section-title">My Projects</h2>
         </div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center mb-5">
         <!-- Project 1 (Clickable) -->
         <div class="col-md-4 mb-4">
           <div class="card project-card h-100" data-bs-toggle="modal" data-bs-target="#project1Modal">
@@ -304,8 +304,77 @@
         <!-- End Project 5 -->
       </div>
     </div>
+    <!-- Section Blur Overlay -->
+    <div class="section-blur-overlay"></div>
   </section>
-  <!-- End Gallery -->
+
+  <!-- Start Education -->
+  <section id="education" class="section-padding">
+    <div class="container fade-in-section">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2 class="section-title">Education</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8">
+          <div class="resume-item">
+            <h4 class="resume-title">Bachelor of Information Systems</h4>
+            <div class="resume-period">2024 - Present</div>
+            <h5 class="resume-company">Dinamika University</h5>
+            <p class="resume-desc">Currently pursuing a degree with focus on software engineering and web development.</p>
+          </div>
+          <div class="resume-item">
+            <h4 class="resume-title">Computer & Network Engineering</h4>
+            <div class="resume-period">2021 - 2024</div>
+            <h5 class="resume-company">SMK Tamanasiswa Mojokerto</h5>
+            <p class="resume-desc">High school education focusing on mathematics and natural sciences.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section Blur Overlay -->
+    <div class="section-blur-overlay"></div>
+  </section>
+  <!-- End Education -->
+
+  <!-- Start Experience -->
+  <section id="experience" class="section-padding">
+    <div class="container fade-in-section">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2 class="section-title">Work Experience</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center g-4 mb-5">
+        <!-- Experience 1 -->
+        <div class="col-md-6 col-lg-5">
+          <div class="experience-card">
+            <span class="experience-badge">Full-Time</span>
+            <h4>Freelance Web Developer</h4>
+            <span class="company-name">Self-Employed | 2023 - Present</span>
+            <p>
+              Developing responsive and modern websites for various clients, focusing on clean code, performance optimization, and seamless user experience.
+            </p>
+          </div>
+        </div>
+        <!-- Experience 2 -->
+        <div class="col-md-6 col-lg-5">
+          <div class="experience-card">
+            <span class="experience-badge">Training</span>
+            <h4>Technical Support Trainee</h4>
+            <span class="company-name">Local Tech Company | 2023</span>
+            <p>
+              Gained hands-on experience in troubleshooting hardware/software issues, managing local network systems, and providing technical assistance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section Blur Overlay -->
+    <div class="section-blur-overlay"></div>
+  </section>
+  <!-- End Experience -->
 
   <!-- Project 1 Modal -->
   <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
