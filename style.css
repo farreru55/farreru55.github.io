@@ -354,7 +354,7 @@ h6 {
 
 
 #skills .section-blur-overlay,
-
+#contact .section-blur-overlay,
 #education .section-blur-overlay {
 
   background: linear-gradient(to top, var(--bg-base), transparent);
@@ -565,7 +565,7 @@ h6 {
 }
 
 .skill-icon {
-  font-size: 3rem;
+  font-size: 2.2rem;
   color: var(--text-sub);
   transition: all 0.3s ease;
 }
