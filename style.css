@@ -218,8 +218,7 @@ h6 {
 
 /* General Section Styles */
 .section-padding {
-  padding: 8rem 0;
-  margin-bottom: 4rem;
+  padding: 10rem 0;
 }
 
 .section-title {
@@ -535,6 +534,48 @@ h6 {
 .btn-close {
   filter: invert(1) grayscale(100%) brightness(200%);
   /* Make close button white */
+}
+
+/* Projects Styling */
+.project-card {
+  background-color: var(--bg-surface);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.project-card .card-title {
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
+}
+
+.project-card .card-text {
+  color: var(--text-sub);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.project-card img {
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+.hover-opacity-100 {
+  opacity: 1 !important;
+}
+
+.transition-opacity {
+  transition: opacity 0.3s ease;
 }
 
 /* Make card clickable pointer */
