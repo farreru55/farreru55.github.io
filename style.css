@@ -7,17 +7,16 @@
   --text-main: #cdd6f4;
   --text-sub: #a6adc8;
 
-  --accent-primary: #cba6f7;
-  /* Mauve */
-  --accent-secondary: #89b4fa;
-  /* Blue */
-  --accent-highlight: #f5c2e7;
-  /* Pink */
+  --accent-primary: #cba6f7; /* Mauve */
+  --accent-secondary: #89b4fa; /* Blue */
+  --accent-highlight: #f5c2e7; /* Pink */
 
-  --danger: #f38ba8;
-  /* Red */
+  --danger: #f38ba8; /* Red */
 }
 
+/* =========================================
+   Base & Typography
+   ========================================= */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg-base);
@@ -25,29 +24,152 @@ body {
   overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Work Sans', sans-serif;
   color: var(--accent-primary);
 }
 
-/* Navbar - Elegant Redesign */
+.lead, .text-muted {
+  color: var(--text-sub) !important;
+}
+
+/* =========================================
+   Shared Components
+   ========================================= */
+
+/* Buttons */
+.btn-submit {
+  background-color: var(--accent-primary);
+  color: var(--bg-base);
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: var(--accent-highlight);
+  color: var(--bg-base);
+  box-shadow: 0 0 15px rgba(203, 166, 247, 0.5);
+}
+
+.btn-outline-custom {
+  color: var(--text-main);
+  border: 2px solid var(--bg-surface);
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+  border-color: var(--accent-secondary);
+  color: var(--accent-secondary);
+}
+
+.btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Forms */
+.form-control {
+  border: 1px solid var(--bg-surface);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background-color: var(--bg-mantle);
+  color: var(--text-main);
+}
+
+.form-control:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(203, 166, 247, 0.2);
+  background-color: var(--bg-mantle);
+  color: var(--text-main);
+}
+
+.form-control::placeholder {
+  color: var(--text-sub);
+  opacity: 0.6;
+}
+
+/* Modals */
+.modal-content {
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--bg-mantle);
+}
+
+.modal-footer {
+  border-top: 1px solid var(--bg-mantle);
+}
+
+/* Section Titles & Padding */
+.section-padding {
+  padding: 10rem 0;
+  position: relative;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+  color: var(--accent-primary);
+  z-index: 20;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: var(--accent-secondary);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Section Transitions (Blur Overlay) */
+.section-blur-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Overlay Color Logic based on Next Section */
+#about .section-blur-overlay,
+#projects .section-blur-overlay,
+#experience .section-blur-overlay {
+  background: linear-gradient(to top, var(--bg-mantle), transparent);
+}
+
+#skills .section-blur-overlay,
+#education .section-blur-overlay,
+#contact .section-blur-overlay {
+  background: linear-gradient(to top, var(--bg-base), transparent);
+}
+
+/* =========================================
+   Navbar
+   ========================================= */
 .navbar-custom {
   background-color: rgba(30, 30, 46, 0.8);
-  /* More transparent */
   backdrop-filter: blur(15px);
-  /* Stronger blur */
   -webkit-backdrop-filter: blur(15px);
-  /* Safari support */
   padding: 1rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  /* Fainter border */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow */
   transition: all 0.3s ease;
 }
 
@@ -56,9 +178,7 @@ h6 {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 2px;
-  /* Wider spacing */
   text-transform: uppercase;
-  /* Uppercase for elegance */
   color: var(--accent-primary) !important;
 }
 
@@ -95,9 +215,10 @@ h6 {
   width: 100%;
 }
 
-/* Hero Section / Jumbotron */
+/* =========================================
+   Hero Section (Jumbotron)
+   ========================================= */
 .jumbotron {
-  /* Linear gradient using Mantle and Base */
   background: linear-gradient(135deg, var(--bg-mantle), var(--bg-base));
   padding-top: 8rem;
   padding-bottom: 0;
@@ -108,10 +229,8 @@ h6 {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  /* Ensure shapes don't spill out */
 }
 
-/* Jumbotron Decorations */
 .animated-bg {
   position: absolute;
   top: 0;
@@ -136,7 +255,6 @@ h6 {
   width: 50vw;
   height: 50vw;
   background: var(--accent-primary);
-  /* Mauve */
   animation-delay: 0s;
 }
 
@@ -146,7 +264,6 @@ h6 {
   width: 30vw;
   height: 30vw;
   background: var(--accent-secondary);
-  /* Blue */
   animation-delay: -5s;
 }
 
@@ -156,22 +273,15 @@ h6 {
   width: 40vw;
   height: 40vw;
   background: var(--accent-highlight);
-  /* Pink */
   animation-delay: -10s;
   opacity: 0.4;
 }
 
 @keyframes float {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-
-  100% {
-    transform: translate(30px, 50px) rotate(20deg);
-  }
+  0% { transform: translate(0, 0) rotate(0deg); }
+  100% { transform: translate(30px, 50px) rotate(20deg); }
 }
 
-/* Ensure text is above decorations */
 .jumbotron .hero-title,
 .jumbotron .hero-subtitle,
 .jumbotron img {
@@ -190,19 +300,9 @@ h6 {
   font-size: 1.5rem;
   font-weight: 300;
   color: var(--accent-secondary);
-  /* Blue */
   margin-bottom: 3rem;
 }
 
-.wave-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  line-height: 0;
-}
-
-/* Blur Transition Overlay */
 .jumbo-blur-overlay {
   position: absolute;
   bottom: 0;
@@ -216,39 +316,16 @@ h6 {
   pointer-events: none;
 }
 
-/* General Section Styles */
-.section-padding {
-  padding: 10rem 0;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  position: relative;
-  display: inline-block;
-  color: var(--accent-primary);
-  z-index: 20;
-  /* Ensure title is on top */
-}
-
-.section-title::after {
-  content: '';
-  display: block;
-  width: 50%;
-  height: 3px;
-  background-color: var(--accent-secondary);
-  margin: 0.5rem auto 0;
-  border-radius: 2px;
-}
-
-/* About Section */
-
+/* =========================================
+   About Section
+   ========================================= */
 #about {
-
   background-color: var(--bg-base);
+}
 
+.about-content {
+  z-index: 10 !important;
   position: relative;
-
 }
 
 /* Elegant Badge */
@@ -275,7 +352,7 @@ h6 {
 
 /* About Image Frame */
 .about-img-container {
-  z-index: 1;
+  z-index: 10 !important;
 }
 
 .about-frame {
@@ -285,7 +362,7 @@ h6 {
   width: 100%;
   height: 100%;
   border: 2px solid var(--accent-secondary);
-  border-radius: 0.5rem; /* Match rounded-3 */
+  border-radius: 0.5rem;
   z-index: -1;
   transition: all 0.4s ease;
 }
@@ -312,237 +389,61 @@ h6 {
   color: var(--accent-primary);
 }
 
-/* Outline Button */
-.btn-outline-custom {
-  color: var(--text-main);
-  border: 2px solid var(--bg-surface);
-  padding: 0.75rem 1.5rem;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.btn-outline-custom:hover {
-  border-color: var(--accent-secondary);
-  color: var(--accent-secondary);
-}
-
-
-
-/* Skills Section */
-
+/* =========================================
+   Skills Section
+   ========================================= */
 #skills {
-
   background-color: var(--bg-mantle);
-
-  position: relative;
-
 }
 
-
-
-/* Projects Section */
-
-#projects {
-
-  background-color: var(--bg-base) !important;
-
-  position: relative;
-
-}
-
-
-
-/* Education Section */
-
-#education {
-
-  background-color: var(--bg-mantle);
-
-  position: relative;
-
-}
-
-
-
-/* Experience Section */
-
-#experience {
-
-  background-color: var(--bg-base);
-
-  position: relative;
-
-}
-
-
-
-/* Contact Section */
-
-#contact {
-
-  background-color: var(--bg-mantle);
-
-  position: relative;
-
-}
-
-
-
-/* Reusable Section Blur Overlay */
-
-.section-blur-overlay {
-
-  position: absolute;
-
-  bottom: 0;
-
-  left: 0;
-
-  width: 100%;
-
-  height: 100px;
-
-  backdrop-filter: blur(8px);
-
-  -webkit-backdrop-filter: blur(8px);
-
-  z-index: 2;
-
-  pointer-events: none;
-
-}
-
-
-
-/* Adjust overlay color based on the NEXT section's background */
-
-#about .section-blur-overlay,
-
-#projects .section-blur-overlay,
-
-#experience .section-blur-overlay {
-
-  background: linear-gradient(to top, var(--bg-mantle), transparent);
-
-}
-
-
-
-#skills .section-blur-overlay,
-#contact .section-blur-overlay,
-#education .section-blur-overlay {
-
-  background: linear-gradient(to top, var(--bg-base), transparent);
-
-}
-
-
-
-.form-control {
-  border: 1px solid var(--bg-surface);
-  padding: 0.75rem 1rem;
-  border-radius: 8px;
-  background-color: var(--bg-mantle);
-  color: var(--text-main);
-}
-
-.form-control:focus {
-  border-color: var(--accent-primary);
-  box-shadow: 0 0 0 3px rgba(203, 166, 247, 0.2);
-  /* Mauve transparent */
-  background-color: var(--bg-mantle);
-  color: var(--text-main);
-}
-
-/* Placeholder color in inputs */
-.form-control::placeholder {
-  color: var(--text-sub);
-  opacity: 0.6;
-}
-
-.btn-submit {
-  background-color: var(--accent-primary);
-  color: var(--bg-base);
-  /* Dark text on light button */
-  border: none;
-  padding: 0.75rem 2rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  border-radius: 50px;
-  transition: all 0.3s ease;
-}
-
-.btn-submit:hover {
-  background-color: var(--accent-highlight);
-  color: var(--bg-base);
-  box-shadow: 0 0 15px rgba(203, 166, 247, 0.5);
-}
-
-/* Contact Icons */
-.contact-icons a {
-  color: var(--text-main);
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-.contact-icons a:hover {
-  color: var(--accent-primary);
-  transform: translateY(-5px);
-}
-
-.contact-icons i {
-  font-size: 2.5rem;
-}
-
-/* Footer */
-.footer {
-  background-color: var(--bg-base);
-  color: var(--text-sub);
-  border-top: 1px solid var(--bg-surface);
-}
-
-.footer a:hover {
-  color: var(--accent-primary) !important;
-  text-decoration: underline;
-}
-
-/* Bootstrap Overrides for Text Colors in this theme */
-.lead {
-  color: var(--text-sub);
-}
-
-.text-muted {
-  color: var(--text-sub) !important;
-}
-
-/* Bootstrap Modal Overrides for Catppuccin */
-.modal-content {
+.skill-card {
   background-color: var(--bg-surface);
-  color: var(--text-main);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
-.modal-header {
-  border-bottom: 1px solid var(--bg-mantle);
+.skill-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-secondary);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.modal-footer {
-  border-top: 1px solid var(--bg-mantle);
+.skill-card .icon-box {
+  color: var(--accent-primary);
 }
 
-.btn-close {
-  filter: invert(1) grayscale(100%) brightness(200%);
-  /* Make close button white */
+.skill-icon {
+  font-size: 3rem;
+  color: var(--text-sub);
+  transition: all 0.3s ease;
 }
 
-/* Projects Styling */
+.skill-icon:hover {
+  color: var(--accent-highlight);
+  transform: scale(1.1);
+}
+
+/* =========================================
+   Projects Section
+   ========================================= */
+#projects {
+  background-color: var(--bg-base) !important;
+}
+
 .project-card {
   background-color: var(--bg-surface);
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 15px;
   overflow: hidden;
   transition: all 0.3s ease;
+}
+
+.project-card[data-bs-toggle="modal"] {
+  cursor: pointer;
 }
 
 .project-card:hover {
@@ -578,34 +479,13 @@ h6 {
   transition: opacity 0.3s ease;
 }
 
-/* Make card clickable pointer */
-.project-card[data-bs-toggle="modal"] {
-  cursor: pointer;
+/* =========================================
+   Education Section
+   ========================================= */
+#education {
+  background-color: var(--bg-mantle);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .section-padding {
-    padding: 4rem 0;
-  }
-
-  .my-img {
-    max-width: 250px;
-    /* Smaller image on mobile */
-    margin-bottom: 2rem;
-  }
-}
-
-
-/* Timeline & Education Styling */
 .resume-item {
   padding: 0 0 30px 25px;
   border-left: 2px solid var(--accent-secondary);
@@ -661,40 +541,12 @@ h6 {
   line-height: 1.6;
 }
 
-/* Skill Card Styling */
-.skill-card {
-  background-color: var(--bg-surface);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 20px;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  height: 100%;
-  position: relative;
-  overflow: hidden;
+/* =========================================
+   Experience Section
+   ========================================= */
+#experience {
+  background-color: var(--bg-base);
 }
-
-.skill-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--accent-secondary);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.skill-card .icon-box {
-  color: var(--accent-primary);
-}
-
-.skill-icon {
-  font-size: 2.2rem;
-  color: var(--text-sub);
-  transition: all 0.3s ease;
-}
-
-.skill-icon:hover {
-  color: var(--accent-highlight);
-  transform: scale(1.1);
-}
-
-
-/* Work Experience Card Styling */
 
 .experience-card {
   background-color: var(--bg-surface);
@@ -707,578 +559,109 @@ h6 {
   height: 100%;
 }
 
-
-
 .experience-card:hover {
   transform: translateY(-10px);
   border-color: var(--accent-primary);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 
-
-
 .experience-card::after {
-
   content: '';
-
   position: absolute;
-
   top: 0;
-
   right: 0;
-
   width: 100px;
-
   height: 100px;
-
   background: radial-gradient(circle, var(--accent-primary) 0%, transparent 70%);
-
   opacity: 0.05;
-
   transition: opacity 0.3s ease;
-
 }
-
-
 
 .experience-card:hover::after {
   opacity: 0.15;
 }
 
-
-
 .experience-badge {
-
   background: rgba(137, 180, 250, 0.1);
-  /* accent-secondary with opacity */
-
   color: var(--accent-secondary);
-
   font-size: 0.75rem;
-
   font-weight: 700;
-
   padding: 5px 12px;
-
   border-radius: 50px;
-
   text-transform: uppercase;
-
   letter-spacing: 1px;
-
   display: inline-block;
-
   margin-bottom: 1rem;
-
 }
-
-
 
 .experience-card h4 {
-
   color: var(--text-main);
-
   font-weight: 700;
-
   margin-bottom: 0.5rem;
-
 }
-
-
 
 .experience-card .company-name {
-
   color: var(--accent-primary);
-
   font-weight: 600;
-
   font-size: 1rem;
-
   margin-bottom: 1rem;
-
   display: block;
-
 }
-
-
 
 .experience-card p {
-
-
-
   color: var(--text-sub);
-
-
-
   font-size: 0.95rem;
-
-
-
   line-height: 1.6;
-
-
-
   margin-bottom: 0;
-
-
-
 }
 
-
-
-
-
-
-
-/* Section Backgrounds & Transitions */
-
-
-
-
-
-
-
-#education {
-
-
-
-
-
-
-
+/* =========================================
+   Contact Section & Footer
+   ========================================= */
+#contact {
   background-color: var(--bg-mantle);
-
-
-
-
-
-
-
-  position: relative;
-
-
-
-
-
-
-
 }
 
+.contact-icons a {
+  color: var(--text-main);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
 
+.contact-icons a:hover {
+  color: var(--accent-primary);
+  transform: translateY(-5px);
+}
 
+.contact-icons i {
+  font-size: 2.5rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-#experience {
-
-
-
-
-
-
-
+/* Footer */
+.footer {
   background-color: var(--bg-base);
-
-
-
-
-
-
-
-  position: relative;
-
-
-
-
-
-
-
+  color: var(--text-sub);
+  border-top: 1px solid var(--bg-surface);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Reusable Section Blur Overlay */
-
-
-
-
-
-
-
-.section-blur-overlay {
-
-
-
-
-
-
-
-  position: absolute;
-
-
-
-
-
-
-
-  bottom: 0;
-
-
-
-
-
-
-
-  left: 0;
-
-
-
-
-
-
-
-  width: 100%;
-
-
-
-
-
-
-
-  height: 100px;
-
-
-
-
-
-
-
-  backdrop-filter: blur(8px);
-
-
-
-
-
-
-
-  -webkit-backdrop-filter: blur(8px);
-
-
-
-
-
-
-
-  z-index: 2;
-
-
-
-
-
-
-
-  pointer-events: none;
-
-
-
-
-
-
-
+.footer a:hover {
+  color: var(--accent-primary) !important;
+  text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Adjust overlay color based on the NEXT section's background */
-
-
-
-
-
-
-
-#projects .section-blur-overlay {
-
-
-
-
-
-
-
-  background: linear-gradient(to top, var(--bg-mantle), transparent);
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#about .section-blur-overlay {
-
-
-
-
-
-
-
-  background: linear-gradient(to top, var(--bg-mantle), transparent);
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#education .section-blur-overlay {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  background: linear-gradient(to top, var(--bg-base), transparent);
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#experience .section-blur-overlay {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  background: linear-gradient(to top, var(--bg-mantle), transparent);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Fix Z-Index for About Section */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.about-img-wrapper {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  z-index: 10 !important;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.about-content {
-  z-index: 10 !important;
-  position: relative;
+/* =========================================
+   Responsive Adjustments
+   ========================================= */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .section-padding {
+    padding: 4rem 0;
+  }
 }
