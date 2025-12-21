@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body id="home">
+<body>
   <!-- Start Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
     <div class="container">
@@ -67,7 +67,7 @@
   <!-- End Navbar -->
 
   <!-- Start Jumbotron -->
-  <section class="jumbotron text-center pt-5">
+  <section id="home" class="jumbotron text-center pt-5">
     <!-- Background Decoration -->
     <div class="animated-bg">
       <div class="shape shape-1"></div>
@@ -128,7 +128,7 @@
               </div>
               <div class="col-6 col-sm-4">
                 <div class="stat-box">
-                  <h3 class="fw-bold mb-0 text-primary-custom">10+</h3>
+                  <h3 class="fw-bold mb-0 text-primary-custom">5+</h3>
                   <small class="text-uppercase text-muted fw-bold">Projects</small>
                 </div>
               </div>
@@ -295,14 +295,15 @@
         <div class="col-md-4 mb-4">
           <div class="card project-card h-100" data-bs-toggle="modal" data-bs-target="#project3Modal">
             <div class="position-relative">
-              <img src="assets/img/projects/projects-3/projects-3.jpg" class="card-img-top" alt="Selfie 1" />
+              <img src="assets/img/projects/projects-3/campagnewebsite-1.png" class="card-img-top"
+                alt="Campagne Website" />
               <div
                 class="position-absolute top-50 start-50 translate-middle text-white opacity-0 hover-opacity-100 transition-opacity">
                 <i class="bi bi-eye-fill fs-1"></i>
               </div>
             </div>
             <div class="card-body">
-              <h5 class="card-title fw-bold">Project 3</h5>
+              <h5 class="card-title fw-bold">Campagne Website</h5>
               <p class="card-text">
                 Click this card to see the gallery details! This is an example of a pop-up project showcase.
               </p>
@@ -315,14 +316,14 @@
         <div class="col-md-4 mb-4">
           <div class="card project-card h-100" data-bs-toggle="modal" data-bs-target="#project4Modal">
             <div class="position-relative">
-              <img src="assets/img/projects/projects-4/projects-4.jpg" class="card-img-top" alt="Selfie 1" />
+              <img src="assets/img/projects/projects-4/mydashboard.png" class="card-img-top" alt="Selfie 1" />
               <div
                 class="position-absolute top-50 start-50 translate-middle text-white opacity-0 hover-opacity-100 transition-opacity">
                 <i class="bi bi-eye-fill fs-1"></i>
               </div>
             </div>
             <div class="card-body">
-              <h5 class="card-title fw-bold">Project 4</h5>
+              <h5 class="card-title fw-bold">Personal Dashboard</h5>
               <p class="card-text">
                 Click this card to see the gallery details! This is an example of a pop-up project showcase.
               </p>
@@ -370,14 +371,14 @@
             <h4 class="resume-title">Bachelor of Information Systems</h4>
             <div class="resume-period">2024 - Present</div>
             <h5 class="resume-company">Dinamika University</h5>
-            <p class="resume-desc">Currently pursuing a degree with focus on software engineering and web development.
+            <p class="resume-desc">Currently pursuing a degree with focus on bridging the gap between information technology (IT) and business/organizational needs.
             </p>
           </div>
           <div class="resume-item">
             <h4 class="resume-title">Computer & Network Engineering</h4>
             <div class="resume-period">2021 - 2024</div>
-            <h5 class="resume-company">SMK Tamanasiswa Mojokerto</h5>
-            <p class="resume-desc">High school education focusing on mathematics and natural sciences.</p>
+            <h5 class="resume-company">SMK Tamansiswa Mojokerto</h5>
+            <p class="resume-desc">Vocational High school focusing on installation, management, and maintenance of computer systems and networks.</p>
           </div>
         </div>
       </div>
@@ -530,7 +531,7 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title fw-bold" id="project3ModalLabel">My Third Projects</h5>
+          <h5 class="modal-title fw-bold" id="project3ModalLabel">Campagne Website</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -546,23 +547,10 @@
             </div>
             <div class="carousel-inner rounded">
               <div class="carousel-item active">
-                <img src="assets/img/projects/projects-3/projects-3.jpg" class="d-block w-100" alt="Project Image 1">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/img/projects/projects-3/projects-3.jpg" class="d-block w-100" alt="Project Image 2">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/img/projects/projects-3/projects-3.jpg" class="d-block w-100" alt="Project Image 3">
+                <img src="assets/img/projects/projects-3/campagnewebsite-1.png" class="d-block w-100"
+                  alt="Campagne Website">
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject3" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject3" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
           <!-- Description -->
           <div class="mt-4">
@@ -572,8 +560,10 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary btn-submit">View Live Demo</button>
+          <a href="https://farreru55.github.io/no-3/">
+            <button type="button" class="btn btn-primary btn-submit">View Live
+              Demo</button>
+          </a>
         </div>
       </div>
     </div>
@@ -585,7 +575,7 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title fw-bold" id="project4ModalLabel">My Fourth Projects</h5>
+          <h5 class="modal-title fw-bold" id="project4ModalLabel">Personal Dashboard</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -594,30 +584,12 @@
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselProject4" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselProject4" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselProject4" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner rounded">
               <div class="carousel-item active">
-                <img src="assets/img/projects/projects-4/projects-4.jpg" class="d-block w-100" alt="Project Image 1">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/img/projects/projects-4/projects-4-1.png" class="d-block w-100" alt="Project Image 2">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/img/projects/projects-4/projects-4.jpg" class="d-block w-100" alt="Project Image 3">
+                <img src="assets/img/projects/projects-4/mydashboard.png" class="d-block w-100" alt="Project Image 1">
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject4" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject4" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
           <!-- Description -->
           <div class="mt-4">
@@ -627,8 +599,9 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary btn-submit">View Live Demo</button>
+          <a href="https://farreru55.github.io/mydashboard/">
+            <button type="button" class="btn btn-primary btn-submit">View Live Demo</button>
+          </a>
         </div>
       </div>
     </div>
@@ -697,8 +670,7 @@
         <div class="col-lg-8 mx-auto">
           <h2 class="section-title">Contact Me</h2>
           <p class="lead mb-5">
-            Saya selalu terbuka untuk peluang baru, kolaborasi, atau sekadar berbincang santai.
-            Jangan ragu untuk menghubungi saya melalui platform di bawah ini!
+            Open to collaboration, freelance projects, and meaningful discussions around technology and systems.
           </p>
         </div>
       </div>
@@ -750,7 +722,7 @@
     <p>
       Created with
       <i class="bi bi-heart-fill text-danger"></i> by
-      <a href="https://instagram.com/frxlnd" class="text-white fw-bold text-decoration-none">Farrel Endra A.</a>
+      <a href="https://instagram.com/farreru.riyal" class="text-white fw-bold text-decoration-none">Farrel Endra A.</a>
     </p>
   </footer>
   <!-- End Footer -->
@@ -779,6 +751,30 @@
     }
     window.addEventListener("scroll", reveal);
     reveal(); // Jalankan saat pertama kali load
+
+    // Active Navbar on Scroll Script (Scroll Spy)
+    function activeMenu() {
+      var sections = document.querySelectorAll("section");
+      var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+      var scrollY = window.pageYOffset;
+
+      sections.forEach(current => {
+        var sectionHeight = current.offsetHeight;
+        var sectionTop = current.offsetTop - 150; // Adjust for navbar height/offset
+        var sectionId = current.getAttribute("id");
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").includes(sectionId)) {
+              link.classList.add("active");
+            }
+          });
+        }
+      });
+    }
+    window.addEventListener("scroll", activeMenu);
   </script>
 </body>
 
