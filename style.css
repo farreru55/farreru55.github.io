@@ -536,12 +536,37 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
 }
 
+.project-card .position-relative {
+  height: 250px;
+  overflow: hidden;
+}
+
 .project-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
   transition: transform 0.5s ease;
 }
 
 .project-card:hover img {
   transform: scale(1.1);
+}
+
+.mobile-preview-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-mantle);
+  padding: 20px;
+}
+
+.mobile-img {
+  max-height: 500px;
+  width: auto !important;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border: 4px solid #333;
 }
 
 .hover-opacity-100 {
