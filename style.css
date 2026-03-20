@@ -559,6 +559,24 @@ h6 {
   opacity: 1;
 }
 
+.tech-stack-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.tech-stack-icons i {
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.tech-stack-icons i:hover {
+  transform: scale(1.2);
+}
+
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;
