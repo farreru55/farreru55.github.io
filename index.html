@@ -91,17 +91,16 @@
         <div class="col-lg-7 ps-lg-5">
           <div class="about-content">
             <span class="badge-elegant mb-2">Introduction</span>
-            <h2 class="display-6 fw-bold mb-4">
-              Designing with <span class="text-gradient">Passion</span>, <br>
-              Building with <span class="text-gradient">Precision</span>.
+            <h2 class="display-6 fw-bold">
+              A <span class="text-gradient">Developer</span>
             </h2>
             <p class="lead mb-4 text-secondary">
               Hello! I'm <strong>Farrel Endra A.</strong>, a Information Systems student at Dinamika
               University.
-              I bridge the gap between complex backend logic and beautiful user interfaces.
+              I bridge the gap between complex backend logic and user interfaces.
             </p>
             <p class="mb-5 text-muted lh-lg">
-              I don't just write code, I craft solutions that
+              I don't just write code, I create solutions that
               solve real-world problems.
             </p>
 
@@ -163,11 +162,13 @@
               <i class="devicon-html5-plain skill-icon" title="HTML5"></i>
               <i class="devicon-css3-plain skill-icon" title="CSS3"></i>
               <i class="devicon-javascript-plain skill-icon" title="JavaScript"></i>
-              <i class="devicon-php-plain skill-icon" title="PHP"></i>
               <i class="devicon-bootstrap-plain skill-icon" title="Bootstrap 5"></i>
               <i class="devicon-tailwindcss-original skill-icon" title="Tailwind CSS"></i>
-              <i class="devicon-nodejs-plain skill-icon" title="Node.js"></i>
+              <i class="devicon-php-plain skill-icon" title="PHP"></i>
               <i class="devicon-laravel-plain skill-icon" title="Laravel"></i>
+              <i class="devicon-react-plain skill-icon" title="React"></i>
+              <i class="devicon-nextjs-plain skill-icon" title="Next.js"></i>
+              <i class="devicon-nodejs-plain skill-icon" title="Node.js"></i>
             </div>
           </div>
         </div>
@@ -182,6 +183,7 @@
             <div class="d-flex flex-wrap justify-content-center gap-3">
               <i class="devicon-flutter-plain skill-icon" title="Flutter"></i>
               <i class="devicon-dart-plain skill-icon" title="Dart"></i>
+              <i class="devicon-java-plain skill-icon" title="Java"></i>
             </div>
           </div>
         </div>
@@ -197,6 +199,7 @@
               <i class="devicon-mysql-plain skill-icon" title="MySql"></i>
               <i class="devicon-postgresql-plain skill-icon" title="PostgreSql"></i>
               <i class="devicon-sqlite-plain skill-icon" title="Sqlite"></i>
+              <i class="devicon-firebase-plain skill-icon" title="Firebase"></i>
             </div>
           </div>
         </div>
@@ -217,6 +220,20 @@
               <i class="devicon-vim-plain skill-icon" title="Vim"></i>
               <i class="devicon-linux-plain skill-icon" title="Linux"></i>
               <i class="devicon-npm-original-wordmark skill-icon" title="NPM"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Programming & Scripting -->
+        <div class="col-md-4 mb-4">
+          <div class="skill-card p-4 text-center">
+            <div class="icon-box mb-1">
+              <i class="bi bi-terminal fs-1"></i>
+            </div>
+            <h3 class="fs-4 fw-bold mb-4">Programming & Scripting</h3>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <i class="devicon-python-plain skill-icon" title="Python"></i>
+              <i class="devicon-bash-plain skill-icon" title="Bash"></i>
             </div>
           </div>
         </div>
@@ -409,7 +426,7 @@
       </div>
       <div class="row text-center mt-4">
         <div class="col">
-          <button id="view-all-projects-btn" class="btn btn-submit" style="display: none;">View All
+          <button id="view-all-projects-btn" class="btn btn-submit d-none">View All
             Projects</button>
         </div>
       </div>
@@ -632,12 +649,6 @@
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <!-- Optional: Add a live demo link if available -->
-            <!-- <a href="your-project-7-live-demo-link" target="_blank">
-            <button type="button" class="btn btn-submit">View Live Demo</button>
-          </a> -->
-          </div>
         </div>
       </div>
     </div>
@@ -813,7 +824,6 @@
               href="https://www.figma.com/proto/opYTRa521xGtjeW8rlaXuV/Project-DAM-Olicon?node-id=196-514&starting-point-node-id=196%3A514&t=PodV0JIFSa0qMEDD-1">
               <button type="button" class="btn btn-submit">View Live Demo</button>
             </a>
-
           </div>
         </div>
       </div>
@@ -887,12 +897,6 @@
                 <i class="devicon-socketio-original colored" title="Socket.io"></i>
               </div>
             </div>
-          </div>
-          <div class="modal-footer">
-            <!-- Optional: Add a live demo link if available -->
-            <!-- <a href="your-project-6-live-demo-link" target="_blank">
-            <button type="button" class="btn btn-submit">View Live Demo</button>
-          </a> -->
           </div>
         </div>
       </div>
@@ -997,8 +1001,6 @@
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-          </div>
         </div>
       </div>
     </div>
@@ -1034,38 +1036,17 @@
             </div>
           </div>
         </div>
-        <!-- <div class="row justify-content-center">
-        <div class="col-md-6">
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Full Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Your Name" />
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="name@example.com" />
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="3" placeholder="Write your message here..."></textarea>
-            </div>
-            <div class="text-center">
-              <button type="submit" class="btn btn-submit w-100">Send Message</button>
-            </div>
-          </form>
-        </div>
-      </div> -->
       </div>
     </section>
     <!-- End Contact -->
 
     <!-- Start Footer -->
-    <footer class="text-center pb-3 pt-3" style="color: #777;">
-      <p>
+    <footer class="footer text-center pb-3 pt-3">
+      <p class="mb-0">
         Created with
-        <i class="bi bi-heart-fill" style="color: #777;"></i> by
-        <a href="https://instagram.com/farreru.riyal" class="fw-bold text-decoration-none" style="color: #555;">Farrel
-          Endra A.</a>
+        <i class="bi bi-heart-fill"></i> by
+        <a href="https://instagram.com/farreru.riyal" class="fw-bold text-decoration-none"
+          style="color: var(--accent-primary);">Farrel Endra A.</a>
       </p>
     </footer>
     <!-- End Footer -->
