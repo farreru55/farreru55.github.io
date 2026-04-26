@@ -40,31 +40,27 @@ h6 {
   color: var(--text-sub) !important;
 }
 
-.btn-submit {
-  background-color: #fafafa;
-  color: #555555;
-  border: 1.5px solid #ccc;
-  padding: 0.75rem 2rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  border-radius: 50px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.btn-submit:hover {
-  background-color: var(--text-main);
-  color: var(--bg-base);
-}
-
+.btn-submit,
 .btn-outline-custom {
   color: #555555;
   border: 1.5px solid #ccc;
-  padding: 0.75rem 1.5rem;
   border-radius: 50px;
   font-weight: 600;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.btn-submit {
+  background-color: #fafafa;
+  padding: 0.75rem 2rem;
+  letter-spacing: 0.5px;
+}
+
+.btn-outline-custom {
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+}
+
+.btn-submit:hover,
 .btn-outline-custom:hover {
   background-color: var(--text-main);
   color: var(--bg-base);
