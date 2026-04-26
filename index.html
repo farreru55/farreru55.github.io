@@ -235,6 +235,26 @@
         </div>
       </div>
       <div class="row justify-content-center mb-5" id="project-list-container">
+        <!-- Project 8 -->
+        <div class="col-md-4 mb-4 project-item">
+          <div class="card project-card h-100" data-bs-toggle="modal" data-bs-target="#project8Modal">
+            <div class="position-relative">
+              <img src="assets/img/projects/projects-8/ss-commute-tracker-1.png" class="card-img-top" alt="Commute Tracker" />
+              <div
+                class="position-absolute top-50 start-50 translate-middle text-white opacity-0 hover-opacity-100 transition-opacity">
+                <i class="bi bi-eye-fill fs-1"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Commute Tracker</h5>
+              <p class="card-text">
+                [Placeholder: Kalimat singkat yang menjelaskan aplikasi Commute Tracker ini dan tujuannya.]
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- End Project 8 -->
+
         <!-- Project 1 (Clickable) -->
         <div class="col-md-4 mb-4 project-item">
           <div class="card project-card h-100" data-bs-toggle="modal" data-bs-target="#project1Modal">
@@ -920,6 +940,67 @@
       </div>
     </div>
     <!-- End Project Modal -->
+
+    <!-- Project 8 Modal -->
+    <div class="modal fade" id="project8Modal" tabindex="-1" aria-labelledby="project8ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="project8ModalLabel">Commute Tracker</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Carousel -->
+            <div id="carouselProject8" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselProject8" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselProject8" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                  <div class="mobile-preview-container">
+                    <img src="assets/img/projects/projects-8/ss-commute-tracker-1.png" class="d-block mobile-img"
+                      alt="Commute Tracker Screenshot 1">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="mobile-preview-container">
+                    <img src="assets/img/projects/projects-8/ss-commute-tracker-2.png" class="d-block mobile-img"
+                      alt="Commute Tracker Screenshot 2">
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject8"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselProject8"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- Description -->
+            <div class="mt-4">
+              <p>[Placeholder: Deskripsi lengkap proyek Commute Tracker Anda. Jelaskan bagaimana Anda menggunakan geolocator untuk fitur di aplikasi ini.]</p>
+              <p class="text-muted mb-1"><small>Tech Stack:</small></p>
+              <div class="tech-stack-icons mb-3">
+                <i class="devicon-flutter-plain colored" title="Flutter"></i>
+                <i class="devicon-firebase-plain colored" title="Firebase"></i>
+                <i class="devicon-dart-plain colored" title="Dart"></i>
+                <span class="badge bg-secondary ms-2 align-middle" style="font-size: 0.9rem;">Geolocator</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Project 8 Modal -->
 
     <!-- Start Contact -->
     <section id="contact" class="section-padding mb-5">
