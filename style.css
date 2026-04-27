@@ -40,31 +40,27 @@ h6 {
   color: var(--text-sub) !important;
 }
 
-.btn-submit {
-  background-color: #fafafa;
-  color: #555555;
+.btn-submit,
+.btn-outline-custom {
+  color: var(--accent-primary);
   border: 1.5px solid #ccc;
-  padding: 0.75rem 2rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
   border-radius: 50px;
+  font-weight: 600;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn-submit:hover {
-  background-color: var(--text-main);
-  color: var(--bg-base);
+.btn-submit {
+  background-color: var(--bg-mantle);
+  padding: 0.75rem 2rem;
+  letter-spacing: 0.5px;
 }
 
 .btn-outline-custom {
-  color: #555555;
-  border: 1.5px solid #ccc;
+  background-color: transparent;
   padding: 0.75rem 1.5rem;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.btn-submit:hover,
 .btn-outline-custom:hover {
   background-color: var(--text-main);
   color: var(--bg-base);
@@ -78,8 +74,8 @@ h6 {
   border: 1px solid #ddd;
   padding: 0.75rem 1rem;
   border-radius: 8px;
-  background-color: #fafafa;
-  color: #333333;
+  background-color: var(--bg-mantle);
+  color: var(--text-main);
 }
 
 .form-control:focus {
@@ -95,8 +91,8 @@ h6 {
 }
 
 .modal-content {
-  background-color: #fafafa;
-  color: #333333;
+  background-color: var(--bg-mantle);
+  color: var(--text-main);
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -160,7 +156,7 @@ h6 {
   font-size: 1.6rem;
   font-weight: 800;
   letter-spacing: 1px;
-  color: #555555;
+  color: var(--accent-primary);
 }
 
 .navbar-custom .nav-link {
@@ -257,7 +253,7 @@ h6 {
 }
 
 .text-gradient {
-  background: linear-gradient(45deg, #555555, #777777);
+  background: linear-gradient(45deg, var(--accent-primary), var(--text-sub));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -293,7 +289,7 @@ h6 {
 }
 
 .skill-card {
-  background-color: #fafafa;
+  background-color: var(--bg-mantle);
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   transition: all 0.3s ease;
@@ -320,7 +316,7 @@ h6 {
 }
 
 .project-card {
-  background-color: #fafafa;
+  background-color: var(--bg-mantle);
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 15px;
   overflow: hidden;
@@ -461,7 +457,7 @@ h6 {
 }
 
 .experience-card {
-  background-color: #fafafa;
+  background-color: var(--bg-mantle);
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   padding: 2rem;
@@ -545,7 +541,7 @@ h6 {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #555555;
+  background-color: var(--accent-primary);
   background-size: 60% 60%;
   border-radius: 50%;
   width: 40px;
