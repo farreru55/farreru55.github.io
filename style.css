@@ -70,7 +70,15 @@ a:hover {
 
 /* Sections */
 .section {
-  margin-bottom: 96px;
+  margin-bottom: 72px;
+  padding-bottom: 72px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .section h2 {
