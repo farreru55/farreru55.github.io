@@ -20,8 +20,8 @@
       </nav>
     </header>
 
-    <main style="margin-top: 48px;">
-      <h1 style="font-size: 3rem; margin-bottom: 64px; letter-spacing: -0.04em;">Selected Projects</h1>
+    <main class="projects-main">
+      <h1 class="projects-title">Selected Projects</h1>
 
       <div class="project-grid">
 
@@ -47,7 +47,7 @@
 
         <!-- Commute Tracker -->
         <div class="project-card">
-          <img src="assets/img/projects/projects-8/ss-commute-tracker-1.png" class="project-card-img" alt="Commute Tracker" data-images="assets/img/projects/projects-8/ss-commute-tracker-1.png">
+          <img src="assets/img/projects/projects-8/ss-commute-tracker-1.png" class="project-card-img" alt="Commute Tracker" data-images="assets/img/projects/projects-8/ss-commute-tracker-1.png,assets/img/projects/projects-8/ss-commute-tracker-2.png">
           <div class="project-card-content">
             <h3 class="project-card-title">Commute Tracker</h3>
             <p class="project-card-desc">An application to record, track, and analyze daily commutes. Designed specifically to streamline everyday round-trip travel routines.</p>
@@ -59,9 +59,9 @@
         <div class="project-card">
           <img src="assets/img/projects/projects-3/campagnewebsite-1.png" class="project-card-img" alt="Campaign Website" data-images="assets/img/projects/projects-3/campagnewebsite-1.png">
           <div class="project-card-content">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <div class="project-card-header-flex">
               <h3 class="project-card-title">Campaign Website</h3>
-              <a href="https://farreru55.github.io/no-3/" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; text-decoration: underline;">Demo ↗</a>
+              <a href="https://farreru55.github.io/no-3/" target="_blank" rel="noopener noreferrer" class="project-card-demo">Demo ↗</a>
             </div>
             <p class="project-card-desc">A responsive campaign website designed to effectively communicate a specific message and engage visitors focusing on accessibility and performance.</p>
             <span class="project-card-tech">HTML5, CSS3, JavaScript</span>
@@ -72,9 +72,9 @@
         <div class="project-card">
           <img src="assets/img/projects/projects-4/mydashboard.png" class="project-card-img" alt="Personal Dashboard" data-images="assets/img/projects/projects-4/mydashboard.png">
           <div class="project-card-content">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <div class="project-card-header-flex">
               <h3 class="project-card-title">Personal Dashboard</h3>
-              <a href="https://farreru55.github.io/mydashboard/" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; text-decoration: underline;">Demo ↗</a>
+              <a href="https://farreru55.github.io/mydashboard/" target="_blank" rel="noopener noreferrer" class="project-card-demo">Demo ↗</a>
             </div>
             <p class="project-card-desc">A personalized dashboard application designed to streamline daily tasks and information monitoring. Features data visualization widgets.</p>
             <span class="project-card-tech">HTML5, Tailwind CSS, JavaScript</span>
@@ -93,7 +93,7 @@
 
         <!-- Hima Jukebox -->
         <div class="project-card">
-          <img src="assets/img/projects/projects-6/ss-jukebox-3.png" class="project-card-img" alt="Hima Jukebox" data-images="assets/img/projects/projects-6/ss-jukebox-3.png">
+          <img src="assets/img/projects/projects-6/ss-jukebox-3.png" class="project-card-img" alt="Hima Jukebox" data-images="assets/img/projects/projects-6/ss-jukebox-1.png,assets/img/projects/projects-6/ss-jukebox-2.png,assets/img/projects/projects-6/ss-jukebox-3.png">
           <div class="project-card-content">
             <h3 class="project-card-title">Hima Jukebox</h3>
             <p class="project-card-desc">A Website designed for offering request music on the Secretariat, bringing members together through shared playlists.</p>
@@ -127,10 +127,16 @@
 
   <!-- Carousel Modal -->
   <div id="carouselModal" class="carousel-modal">
-    <span class="carousel-close" id="carouselClose">&times;</span>
-    <button class="carousel-prev" id="carouselPrev">&#10094;</button>
+    <span class="carousel-close" id="carouselClose">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </span>
+    <button class="carousel-prev" id="carouselPrev">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
     <img class="carousel-content" id="carouselImg">
-    <button class="carousel-next" id="carouselNext">&#10095;</button>
+    <button class="carousel-next" id="carouselNext">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
     <div class="carousel-counter" id="carouselCounter">1 / 1</div>
   </div>
 

@@ -261,12 +261,13 @@ a:hover {
   top: 24px;
   right: 32px;
   color: #fafafa;
-  font-size: 40px;
-  font-weight: 300;
   cursor: pointer;
-  line-height: 1;
+  line-height: 0;
   transition: color 0.2s;
   z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-close:hover {
@@ -281,12 +282,11 @@ a:hover {
   background: rgba(255, 255, 255, 0.1);
   color: white;
   border: none;
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  font-size: 20px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.2s, transform 0.2s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -421,4 +421,102 @@ a:hover {
   .section {
     margin-bottom: 64px;
   }
+}
+
+/* Extracted Inline Styles */
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+}
+
+.about-name {
+  margin-bottom: 4px;
+}
+
+.about-subtitle {
+  margin-bottom: 0;
+}
+
+.stats-container {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.stat-value {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.view-all-projects-container {
+  margin-top: 32px;
+}
+
+.view-all-projects-link {
+  font-weight: 500;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 4px;
+}
+
+.contact-desc {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  max-width: 600px;
+}
+
+.contact-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  font-weight: 500;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 2px;
+}
+
+.contact-link:hover,
+.view-all-projects-link:hover {
+  border-color: var(--text-primary);
+}
+
+.projects-main {
+  margin-top: 48px;
+}
+
+.projects-title {
+  font-size: 3rem;
+  margin-bottom: 64px;
+  letter-spacing: -0.04em;
+}
+
+.project-card-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.project-card-demo {
+  font-size: 0.85rem;
+  text-decoration: underline;
+  text-decoration-color: var(--border-color);
+  text-underline-offset: 4px;
+}
+
+.project-card-demo:hover {
+  text-decoration-color: var(--text-primary);
 }
