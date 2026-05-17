@@ -362,6 +362,15 @@ a:hover {
   font-size: 0.95rem;
 }
 
+ul.experience-desc {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+ul.experience-desc li {
+  margin-bottom: 4px;
+}
+
 /* Skills */
 .skills-content {
   display: flex;
