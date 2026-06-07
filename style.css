@@ -19,8 +19,15 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 html,
@@ -49,7 +56,7 @@ a:hover {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
   animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
@@ -135,29 +142,29 @@ a:hover {
 
 /* Hero Section */
 .hero {
-  margin-top: 48px;
-  margin-bottom: 112px;
+  margin-top: 100px;
+  margin-bottom: 120px;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 4.5rem;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.04em;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .hero .subtitle {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--text-secondary);
   margin-bottom: 32px;
 }
 
 .hero .description {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: var(--text-secondary);
-  max-width: 600px;
-  margin-bottom: 32px;
+  max-width: 700px;
+  margin-bottom: 40px;
 }
 
 .hero-links {
@@ -609,7 +616,7 @@ ul.experience-desc li {
 }
 
 .projects-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 64px;
   letter-spacing: -0.04em;
 }
@@ -671,7 +678,8 @@ ul.experience-desc li {
     flex-direction: column;
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
+    transform: translateX(100%);
     width: 280px;
     height: 100vh;
     background-color: rgba(250, 250, 250, 0.95);
@@ -680,13 +688,13 @@ ul.experience-desc li {
     padding: 120px 40px 40px;
     gap: 32px;
     box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
-    transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
     z-index: 1000;
     visibility: hidden;
   }
 
   .nav-responsive.active {
-    right: 0;
+    transform: translateX(0);
     visibility: visible;
   }
 
@@ -707,7 +715,7 @@ ul.experience-desc li {
   .menu-toggle.active .hamburger-bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  
+
   body.menu-open {
     overflow: hidden;
   }
@@ -717,22 +725,22 @@ ul.experience-desc li {
     max-width: 92%;
     max-height: 75vh;
   }
-  
+
   .carousel-prev,
   .carousel-next {
     width: 44px;
     height: 44px;
     background: rgba(0, 0, 0, 0.5);
   }
-  
+
   .carousel-prev {
     left: 8px;
   }
-  
+
   .carousel-next {
     right: 8px;
   }
-  
+
   .carousel-close {
     top: 16px;
     right: 16px;
@@ -749,7 +757,7 @@ ul.experience-desc li {
     font-size: 2.25rem;
     letter-spacing: -0.03em;
   }
-  
+
   .projects-title {
     font-size: 2.25rem;
     margin-bottom: 40px;
@@ -760,25 +768,26 @@ ul.experience-desc li {
     align-items: flex-start;
     gap: 16px;
   }
-  
+
   .stats-container {
     gap: 24px;
     margin-bottom: 24px;
   }
 
-  .hero-links, .contact-links {
+  .hero-links,
+  .contact-links {
     gap: 16px;
   }
-  
+
   .experience-header {
     flex-direction: column;
     gap: 4px;
   }
-  
+
   .experience-header .date {
     font-size: 0.85rem;
   }
-  
+
   .section {
     margin-bottom: 56px;
     padding-bottom: 56px;
